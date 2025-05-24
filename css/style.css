@@ -25,11 +25,11 @@ nav ul {
 nav ul li a {
     text-decoration: none;
     color: #333;
-    font-weight: normal; /* 修改为不加粗 */
+    font-weight: normal; 
     padding: 10px 15px;
 }
 
-/* 当前页面导航加粗 */
+/* 页面导航加粗 */
 nav ul li a.active {
     font-weight: bold;
 }
@@ -193,7 +193,7 @@ footer {
 }
 
 
-/* 极简CV页面样式 */
+/* CV页面样式 */
 .cv-simple {
     max-width: 800px;
     margin: 0 auto;
