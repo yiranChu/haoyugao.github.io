@@ -42,9 +42,14 @@ h1, h2, h3 {
     color: #2c3e50;
 }
 
+.main-container {
+    max-width: 1000px;  /* 控制整体内容宽度 */
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
 .intro {
-    text-align: center;
-    margin: 50px 0;
+    margin-top: 50px;  /* 增加与页头的距离 */
 }
 
 .intro h1 {
@@ -112,12 +117,52 @@ footer {
     gap: 40px;
     align-items: flex-start;
     margin-top: 30px;
+    max-width: 900px;  /* 控制内容区域宽度 */
+    margin: 0 auto;    /* 水平居中 */
 }
 
 .profile-image {
     flex: 0 0 250px;
     text-align: center;
 }
+
+.profile-text {
+    flex: 1;
+    min-width: 300px;
+    text-align: left;  /* 文字左对齐 */
+    padding-right: 20px;  /* 右侧留白 */
+}
+
+.profile-text h1 {
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    color: #2c3e50;
+    text-align: left;  /* 姓名左对齐 */
+}
+
+.profile-text p {
+    margin-bottom: 15px;
+    line-height: 1.7;
+    text-align: left;  /* 段落左对齐 */
+}
+
+/* 响应式设计 */
+@media (max-width: 768px) {
+    .profile-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    
+    .profile-image {
+        flex: 1;
+        margin-bottom: 20px;
+    }
+    
+    .profile-text {
+        padding-right: 0;
+    }
+}
+
 
 .profile-image img {
     width: 100%;
@@ -131,21 +176,8 @@ footer {
     line-height: 1.6;
 }
 
-.profile-text {
-    flex: 1;
-    min-width: 300px;
-}
 
-.profile-text h1 {
-    font-size: 2.2em;
-    margin-bottom: 20px;
-    color: #2c3e50;
-}
 
-.profile-text p {
-    margin-bottom: 15px;
-    line-height: 1.7;
-}
 
 /* 响应式设计 */
 @media (max-width: 768px) {
